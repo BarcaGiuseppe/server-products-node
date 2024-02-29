@@ -5,7 +5,7 @@ const port = process.env.port || 3000;
 const productsRoute = require("./routes/products");
 app.use(cors());
 
-//app.use(express.json());
+app.use(express.json());
 app.use("/products", productsRoute);
 app.get("/", async (req, res) => {
   const response = await fetch("https://mockend.up.railway.app/api/products");
