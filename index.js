@@ -6,4 +6,4 @@ const productsRoute = require("./routes/products");
 app.use(cors());
 //app.use(express.json());
 app.use("/products", productsRoute);
-app.listen(3001);
+app.listen(3000);
